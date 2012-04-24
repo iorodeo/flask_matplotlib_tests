@@ -1,0 +1,27 @@
+<html>
+    <h1> Figure Slammer </h1>
+    <div>
+        <form method="post">
+            <table>
+                <tr>
+                    <td>
+                        <div>
+                            <center> <b> x values </b> </center>
+                            <div>
+                                <textarea rows="30" cols="15" name="x_data">{{x_data_str}}</textarea> 
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <center> <b> y values </b> </center>
+                        <div>
+                            <textarea rows="30" cols="15" name="y_data">{{y_data_str}}</textarea> 
+                        </div>
+                    </td>
+                </tr>
+            <table>
+            <button name="plot_button"> Plot</button>
+            <button name="clear_button"> Clear</button>
+        </form>
+        <p> <font color="red"> {{error_msg}}<font>  </p>
+</html>
